@@ -1,0 +1,36 @@
+npm - install packages.
+npm - execute packages.
+
+npx playwright test
+npx playwright show-report
+
+To run single test
+-----------------------------------------
+npx playwright test login.test.ts
+
+To run on particular browser
+Available named projects: "chromium", "firefox", "webkit"  
+----------------------------------------------------------------
+npx playwright test searchProProd --project='Chromium'
+npx playwright test login.spec.ts --project='firefox'
+npx playwright test login.spec.ts --project='webkit'
+
+
+To record and generate code
+-----------------------------------------
+npx playwright codegen https://services-hotfix.techshed-dev.com/services/
+npx playwright codegen https://hd-qa74.homedepotdev.com/pro-project/
+
+
+E:\Projects\playwright-test
+
+
+
+
+
+
+
+
+
+
+
