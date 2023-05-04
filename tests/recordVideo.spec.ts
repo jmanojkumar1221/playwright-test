@@ -2,7 +2,7 @@ import { test, expect, chromium } from '@playwright/test';
 
 test('Test Record script', async () => {
     const browser = await chromium.launch({
-        headless: false
+        headless: true
     });
     const context = await browser.newContext({
         recordVideo: {

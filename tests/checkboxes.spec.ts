@@ -2,7 +2,7 @@ import { test, expect, chromium } from '@playwright/test';
 
 test('test', async ({ page }) => {
     const browser = await chromium.launch({
-        headless: false
+        headless: true
     })  
   const context = await browser.newContext();
   page = await context.newPage();

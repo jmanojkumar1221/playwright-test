@@ -1,11 +1,11 @@
 import { test, expect, chromium } from '@playwright/test';
 
-test('Open letcode', async () => {
+test('Open letcode', async ({page}) => {
     const browser = await chromium.launch({
-        headless: false
+        headless: true
     })
     const context = await browser.newContext();
-    const page = await context.newPage();
+    page = await context.newPage();
     await page.goto('services/');
     await page.getByText('Home Services Let us do it for you').click();
     await page.getByRole('link', { name: 'Bathroom Remodeling' }).click();
